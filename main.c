@@ -37,7 +37,7 @@ int main() {
         }
 
         // Sliko trenutnega procesa zamenjamo s novo:
-        execl("demo", "demo",(char*)NULL);      //execl(...);
+        execl("helloworld", "helloworld",(char*)NULL);      //execl(...);
 
         // Also, all subsequent calls to exec() by this process will cause a SIGTRAP to be sent to it,
         // giving the parent a chance to gain control before the new program begins execution
